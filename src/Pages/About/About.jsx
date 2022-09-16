@@ -8,7 +8,7 @@ import {
   Wrapper,
   ContainerTextOne,
   ContainerTextTwo,
-} from "../about/AboutElement";
+} from "./AboutElement";
 import { FaTv } from "react-icons/fa";
 import { Fade } from "react-reveal";
 const About = () => {
