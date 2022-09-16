@@ -11,7 +11,7 @@ import {
 } from "./AboutElement";
 import { FaTv } from "react-icons/fa";
 import { Fade } from "react-reveal";
-const About = () => {
+const Details = () => {
   return (
     <>
       <Wrapper>
@@ -82,4 +82,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Details;
