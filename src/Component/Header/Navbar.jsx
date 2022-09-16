@@ -4,6 +4,7 @@ import {Nav, NavMenu, NavLink, Bars, NavLogo, Close, DivIcon } from "./NavbarEle
 
 
 
+
 const Navbar =()=>{
 
     const[active, setActive] = useState(false)
@@ -26,14 +27,15 @@ const Navbar =()=>{
                 </DivIcon>
 
                 <NavMenu>
+               
                         <NavLink to="/" activeStyle>
                             <p>Home</p>
                         </NavLink>
                         <NavLink to="/about" activeStyle>
                             <p>About</p>
                         </NavLink>
-                        <NavLink to="/projects" activeStyle>
-                            <p>Projects</p>
+                        <NavLink to="/services" activeStyle>
+                            <p>Services</p>
                         </NavLink>
                         <NavLink to="/contact" activeStyle>
                             <p>Contact</p>

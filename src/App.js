@@ -1,19 +1,25 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter,
-          Routes, // Just Use Routes instead of "Switch"
-          Route } from 'react-router-dom';
-import Navbar from './Component/Header/Navbar';
-import Main from './Component/Home/Home';
-import About from './Pages/About/About';
+import React from "react";
+import "./App.css";
+import {
+  BrowserRouter,
+  // Routes, // Just Use Routes instead of "Switch"
+  // Route,
+} from "react-router-dom";
+import Navbar from "./Component/Header/Navbar";
+import Main from "./Component/Home/Home";
+import About from "../src/Pages/about/About";
+import Services from "./Pages/services/Services";
+import Contact from "./Pages/contact/Contact";
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
-          <Navbar/>
-          <Main/>
-          <About/>
+      <BrowserRouter>
+        <Navbar />
+        <Main />
+        <About />
+        <Services />
+        <Contact />
         {/* <Navbar /> */}
         {/* <Routes>
           <Route exact path="/" element={<Home />} />
@@ -22,7 +28,6 @@ function App() {
           <Route exact path="/signup" element={<Signup />} />
         </Routes> */}
       </BrowserRouter>
-     
     </div>
   );
 }
