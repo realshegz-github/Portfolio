@@ -1,16 +1,16 @@
 import React from "react";
-import { emojify } from "react-emojione";
+// import { emojify } from "react-emojione";
 import {
   Container,
   Box,
- MobileContent,
+  MobileContent,
   TextBox,
   Wrapper,
   ContainerTextOne,
   ContainerTextTwo,
 } from "./AboutElement";
-import { FaTv } from "react-icons/fa";
-import { Fade } from "react-reveal";
+// import { FaTv } from "react-icons/fa";
+// import { Fade } from "react-reveal";
 const About = () => {
   return (
     <>
@@ -19,12 +19,11 @@ const About = () => {
           <h1>About Me</h1>
         </Box>
 
-        <Container>
+        {/* <Container>
           <ContainerTextOne>
             <h2> Hi there{emojify(":D")} </h2>
             <p>
-              {/* I'm <b>Abiodun Segun</b> a <span>Front-end Developer</span>.<br /> */}
-              As a <span>Front-end Developer</span> <FaTv className="tv-icon"/>
+              As a <span>Front-end Developer</span> <FaTv className="tv-icon" />
               <br /> I craft Ideas, design and develop experiences that make
               people's lives easy.
             </p>
@@ -76,7 +75,7 @@ const About = () => {
               </TextBox>
             </Fade>
           </ContainerTextTwo>
-        </Container>
+        </Container> */}
       </Wrapper>
     </>
   );
