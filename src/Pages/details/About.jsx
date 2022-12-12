@@ -34,19 +34,6 @@ const Details = () => {
             </MobileContent>
           </ContainerTextOne>
           <ContainerTextTwo>
-            <Fade duration={2000} bottom delay={200}>
-              <TextBox>
-                <b>
-                  Feb 2021 - April 2021 <br />
-                  <span>Bamyx Technology</span>
-                </b>
-                <br />
-                <p>
-                  <b>Web Designer Trainee:</b> Learning and designing responsive
-                  websites with HTML/CSS.
-                </p>
-              </TextBox>
-            </Fade>
             <Fade duration={2500} bottom delay={400}>
               <TextBox>
                 <b>
@@ -72,6 +59,28 @@ const Details = () => {
                   <br />
                   Intergrating codebase and networking with senior developer,
                   learning about new technologies.
+                </p>
+              </TextBox>
+            </Fade>
+            <Fade duration={2000} bottom delay={200}>
+              <TextBox>
+                <b>
+                  June 2022 - Present <br />
+                  <span>PhaseCurve Technology</span>
+                </b>
+                <br />
+                <p>
+                  <b>Front-End Developer:</b> Building and maintaining of
+                  website{" "}
+                  <a
+                    href="https://phasecurve.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Phasecurve.com
+                  </a>
+                  , collaborating using Git and Trello to achieve specific task
+                  given
                 </p>
               </TextBox>
             </Fade>
