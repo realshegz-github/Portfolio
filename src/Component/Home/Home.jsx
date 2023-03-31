@@ -22,11 +22,16 @@ const Home = () => {
             <Container>
               <h1>Hello!</h1>
               <p>
-                I'm <b style={{ color: "rgb(131, 185, 134)" }}>Abiodun Segun</b>{" "}
-                a Frontend Developer, proficient in designing and implementing
-                amazing User Interface...
+                I'm <b style={{ color: "green" }}>Abiodun Segun</b> a Frontend
+                Developer, proficient in designing and implementing amazing User
+                Interface...
               </p>
-              <HireBtn>Hire Me</HireBtn>
+              <HireBtn
+                href="https://drive.google.com/file/d/1Y_asizo7Q3b6K22mkluTlMqn8kuzBsDU/view?usp=share_link"
+                target="_blank"
+              >
+                Hire Me
+              </HireBtn>
             </Container>
           </Fade>
           <Fade duration={2500} right>

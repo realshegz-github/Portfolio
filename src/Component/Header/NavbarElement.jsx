@@ -8,9 +8,13 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 100px;
   padding: 0 150px;
   background: aliceblue;
+  @media screen and (max-width: 1100px) {
+    padding: 0 100px;
+    width: 100%;
+  }
   @media screen and (max-width: 768px) {
     padding: 0 50px;
     width: 100%;
@@ -23,14 +27,14 @@ export const Close = styled(RiCloseFill)`
 
 export const Bars = styled(FaBars)`
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: block;
     font-size: 1.6rem;
     cursor: pointer;
-  
+  }
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
   padding: 0 2rem;
   cursor: pointer;
   text-decoration: none;
@@ -39,10 +43,10 @@ export const NavLink = styled(Link)`
   p {
     font-size: 1.3rem;
     &:hover {
-      border-bottom: 3px solid rgb(131, 185, 134);
+      border-bottom: 3px solid green;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -52,7 +56,7 @@ export const NavMenu = styled.div`
   flex-wrap: wrap;
   align-items: center;
   margin-right: 2rem;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;

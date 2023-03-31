@@ -14,14 +14,14 @@ import { Fade } from "react-reveal";
 const Details = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="about">
         <Box>
           <h1>About Me</h1>
         </Box>
 
         <Container>
           <ContainerTextOne>
-            <h2> Hi there{emojify(":D")} </h2>
+            <h2> Hi there {emojify(":wink: ")} </h2>
             <p>
               {/* I'm <b>Abiodun Segun</b> a <span>Front-end Developer</span>.<br /> */}
               As a <span>Front-end Developer</span> <FaTv className="tv-icon" />
@@ -29,8 +29,12 @@ const Details = () => {
               people's lives easy.
             </p>
             <MobileContent>
-              My development skills are majorly around <b>HTML</b>, <b>CSS</b> ,{" "}
-              <b>Javascript</b> and <b>React.js</b> and other modern frameworks.
+              My development skills are majorly around{" "}
+              <b style={{ color: "green" }}>HTML</b>,{" "}
+              <b style={{ color: "green" }}>CSS</b> ,{" "}
+              <b style={{ color: "green" }}>Javascript</b>,
+              <b style={{ color: "green" }}> React.js</b> and other modern
+              frameworks.
             </MobileContent>
           </ContainerTextOne>
           <ContainerTextTwo>
@@ -71,16 +75,16 @@ const Details = () => {
                 <br />
                 <p>
                   <b>Front-End Developer:</b> Building and maintaining of
-                  website{" "}
+                  website
                   <a
-                    href="https://phasecurve.com/"
+                    href="https://test-phasecurve-web.azurewebsites.net/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     Phasecurve.com
-                  </a>
-                  , collaborating using Git and Trello to achieve specific task
-                  given
+                  </a>{" "}
+                  with React/Chakra UI, collaborating using Git and Trello to
+                  achieve specific task given
                 </p>
               </TextBox>
             </Fade>

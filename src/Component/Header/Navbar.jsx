@@ -1,49 +1,53 @@
 import React, { useState } from "react";
-import {GiOverInfinity} from 'react-icons/gi';
-import {Nav, NavMenu, NavLink, Bars, NavLogo, Close, DivIcon } from "./NavbarElement";
+// import { GiOverInfinity } from "react-icons/gi";
+import {
+  Nav,
+  NavMenu,
+  NavLink,
+  Bars,
+  NavLogo,
+  Close,
+  DivIcon,
+} from "./NavbarElement";
 
+const Navbar = () => {
+  const [active, setActive] = useState(false);
+  function showMenu() {
+    setActive(!active);
+  }
 
+  return (
+    <>
+      <Nav className={active ? "nav-active" : "navbar"}>
+        <NavLogo to="/" activeStyle>
+          Dev~up
+        </NavLogo>
 
+        <DivIcon className="changer">
+          <Bars className="menu" onClick={showMenu} />
+          <Close className="closeMenu" onClick={showMenu} />
+        </DivIcon>
 
-const Navbar =()=>{
-
-    const[active, setActive] = useState(false)
-    function showMenu(){
-        setActive(!active)
-    }
-
-    return (
-        <>
-            <Nav className={active? 'nav-active':'navbar'}>
-                 
-                <NavLogo to="/" activeStyle>
-                <GiOverInfinity/>
-                  Dev~up
-                </NavLogo>
-
-                <DivIcon className="changer">
-                        <Bars className="menu" onClick={showMenu}/>
-                        <Close className="closeMenu" onClick={showMenu}/>
-                </DivIcon>
-
-                <NavMenu>
-               
-                        <NavLink to="/" activeStyle>
-                            <p>Home</p>
-                        </NavLink>
-                        <NavLink to="/about" activeStyle>
-                            <p>About</p>
-                        </NavLink>
-                        <NavLink to="/services" activeStyle>
-                            <p>Services</p>
-                        </NavLink>
-                        <NavLink to="/contact" activeStyle>
-                            <p>Contact</p>
-                        </NavLink> 
-                </NavMenu>
-            </Nav>
-        </>
-    )
+        <NavMenu>
+          <NavLink href="#about" activeStyle>
+            <p>About</p>
+          </NavLink>
+          <NavLink href="#services" activeStyle>
+            <p>Services</p>
+          </NavLink>
+          <NavLink
+            href="https://test-phasecurve-web.azurewebsites.net/"
+            activeStyle
+          >
+            <p>Project</p>
+          </NavLink>
+          <NavLink href="#contact" activeStyle>
+            <p>Contact</p>
+          </NavLink>
+        </NavMenu>
+      </Nav>
+    </>
+  );
 };
 
-export default Navbar
+export default Navbar;

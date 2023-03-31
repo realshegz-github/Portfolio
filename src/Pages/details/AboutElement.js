@@ -3,14 +3,17 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   width: 100%;
-  height: 100vh;
   color: black;
   display: flex;
+  padding: 100px 150px 90px;
   flex-direction: column;
   justify-content: center;
-  @media screen and (max-width: 768px) {
-    height: auto;
-    padding: 50px 0;
+
+  @media screen and (max-width: 1150px) {
+    padding: 60px 100px 70px;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 40px 30px 50px;
   }
 `;
 export const Box = styled.div`
@@ -24,7 +27,7 @@ export const Box = styled.div`
   }
   @media screen and (max-width: 768px) {
     margin-bottom: 50px;
-    
+
     h1 {
       font-size: 24px;
     }
@@ -34,20 +37,18 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 150px;
-  @media screen and (max-width: 768px) {
-    display: block;
-    margin: 0;
-    padding: 0 50px;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    width: 100%;
   }
 `;
 export const ContainerTextOne = styled.div`
-  max-width: 450px;
+  max-width: 40%;
   h2 {
     font-size: 40px;
     font-family: "Montserrat";
     margin-bottom: 10px;
-    text-align: center;
+    ${"" /* text-align: center; */}
   }
   p {
     font-size: 24px;
@@ -55,13 +56,13 @@ export const ContainerTextOne = styled.div`
     margin-bottom: 10px;
   }
   span {
-    color: rgb(131, 185, 134);
+    color: green;
     font-weight: 700;
   }
   .tv-icon {
     font-size: 16px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
     max-width: 100%;
     h2 {
       font-size: 30px;
@@ -77,7 +78,8 @@ export const ContainerTextOne = styled.div`
 `;
 export const MobileContent = styled.p`
   line-height: 35px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
+    max-width: 100%;
     display: block;
     font-family: "Roboto";
     font-size: 18px;
@@ -85,7 +87,7 @@ export const MobileContent = styled.p`
   }
 `;
 export const ContainerTextTwo = styled.div`
-  max-width: 350px;
+  max-width: 45%;
   font-family: "Roboto";
 
   p {
@@ -94,13 +96,13 @@ export const ContainerTextTwo = styled.div`
     margin-bottom: 30px;
     text-align: justify;
   }
-  @media screen and (max-width: 768px){
-    display: none;
+  @media screen and (max-width: 1000px) {
+    max-width: 100%;
   }
 `;
 export const TextBox = styled.div`
   span {
-    color: rgb(131, 185, 134);
+    color: green;
     font-family: "Montserrat";
   }
 `;

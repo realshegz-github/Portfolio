@@ -4,10 +4,11 @@ import styled from "styled-components";
 export const Main = styled.main`
   background-color: aliceblue;
   position: relative;
+  @media screen and (max-width: 900px) {
+    padding: 0 50px;
+  }
   @media screen and (max-width: 768px) {
-    ${"" /* justify-content: space-between; */}
-    padding:0 50px;
-   
+    padding: 0 30px;
   }
 `;
 
@@ -19,8 +20,8 @@ export const Wrapper = styled.section`
   height: 100vh;
   position: relative;
   @media screen and (max-width: 768px) {
-    height:auto;
-    padding: 50px 0;
+    height: 100%;
+    padding: 68px 0 84px;
   }
 `;
 
@@ -30,7 +31,7 @@ export const Container = styled.div`
     font-size: 7rem;
     font-family: "Roboto Slab";
     @media screen and (max-width: 768px) {
-      font-size: 6rem;
+      font-size: 5rem;
     }
   }
   p {
@@ -39,29 +40,31 @@ export const Container = styled.div`
     line-height: 35px;
     margin-bottom: 30px;
     @media screen and (max-width: 768px) {
-     font-size:20px;
+      font-size: 20px;
     }
   }
 `;
 
-export const HireBtn = styled.button`
-  background: rgb(131, 185, 134);
+export const HireBtn = styled.a`
+  background: green;
   font-family: "Roboto";
+  cursor: pointer;
+  text-decoration: none;
+  line-style: none;
   border: none;
-  ${"" /* border-radius:8px; */}
   padding: 10px 20px;
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: white;
 
   &:hover {
-    background: rgba(127, 165, 132, 0.733);
-    color: white;
-    transition: 1s ease-in-out;
     cursor: pointer;
+    boxshadow: "0px 92px 40px -59px rgba(108, 76, 223, 0.15)";
+    background: rgb(131, 185, 134);
+    ${"" /* transform: scale(1.05); */}
   }
   @media screen and (max-width: 768px) {
-    padding:7px 13px;
-    font-size: 1rem
+    padding: 7px 13px;
+    font-size: 1rem;
   }
 `;
 
@@ -102,8 +105,8 @@ export const ImgContainer = styled.div`
     top: 50px;
     right: 100px;
   }
-  @media screen and (max-width: 768px) {
-   display: none
+  @media screen and (max-width: 1050px) {
+    display: none;
   }
 `;
 

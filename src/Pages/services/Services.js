@@ -13,7 +13,7 @@ import { Fade } from "react-reveal";
 const Services = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="services">
         <Container>
           <ContentWrapper>
             <Fade duration={2000} bottom delay={200}>
@@ -55,7 +55,7 @@ const Services = () => {
                   <p>
                     I also setup project to use basic SEO principles which
                     pushes your websites to the first page on search engines, so
-                    save your ads money{emojify(":wink: ")}
+                    save your ads money{emojify(":smile: ")}
                   </p>
                 </div>
               </ContentBox>

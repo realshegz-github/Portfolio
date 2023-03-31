@@ -2,13 +2,16 @@ import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
   width: 100%;
-  height: 100vh;
   color: black;
   display: flex;
+  padding: 70px 150px 90px;
   flex-direction: column;
   justify-content: center;
-  @media screen and (max-width: 768px) {
-    height: auto;
+  @media screen and (max-width: 1150px) {
+    padding: 50px 100px 70px;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 40px 30px 50px;
   }
 `;
 export const HeaderBox = styled.div`
@@ -20,7 +23,7 @@ export const HeaderBox = styled.div`
     font-family: "Roboto Slab";
     font-size: 34px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     margin-bottom: 30px;
     h1 {
       font-size: 24px;
@@ -29,14 +32,11 @@ export const HeaderBox = styled.div`
 `;
 export const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 0 150px;
-  @media screen and (max-width: 768px) {
-    margin: 0 50px 50px;
-    display: flex;
-    flex-direction:column;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    width: 100%;
   }
 `;
 export const TextBox = styled.div`
@@ -54,15 +54,14 @@ export const TextBox = styled.div`
     font-weight: 600;
     text-align: center;
   }
-  @media screen and (max-width: 768px) {
-
+  @media screen and (max-width: 1000px) {
     h1 {
       font-family: "Roboto Slab";
       margin-bottom: 50px;
       font-size: 24px;
     }
     p {
-     display:none;
+      display: none;
     }
   }
 `;
@@ -80,15 +79,15 @@ export const InputBox = styled.div`
     margin-bottom: 30px;
     font-family: "Roboto Slab";
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
     border-radius: 8px;
     p {
       margin-bottom: 20px;
       font-family: "Roboto Slab";
     }
-    span{
-      font-size:14px;
+    span {
+      font-size: 14px;
     }
   }
 `;

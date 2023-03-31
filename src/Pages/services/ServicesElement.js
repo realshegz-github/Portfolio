@@ -1,30 +1,28 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  color: black;
   font-family: "Roboto";
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
-  height: 100vh;
-  @media screen and (max-width: 768px) {
-    height: auto;
-    padding:  0 0 50px 0;
+  color: black;
+  display: flex;
+  padding: 70px 150px 90px;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 1150px) {
+    padding: 70px 100px 90px;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 50px 30px 70px;
   }
 `;
 export const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 0 100px 150px;
-  @media screen and (max-width: 768px) {
-    display: flex;
+  @media screen and (max-width: 1000px) {
     flex-direction: column-reverse;
-    margin: 0;
-    padding: 0 50px;
-    
+    width: 100%;
   }
 `;
 export const Box = styled.div`
@@ -43,7 +41,9 @@ export const Box = styled.div`
     line-height: 35px;
     text-align: left;
   }
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 1000px) {
+    max-width: 100%;
     margin-bottom: 30px;
     h1 {
       font-family: "Roboto Slab";
@@ -51,7 +51,7 @@ export const Box = styled.div`
       font-size: 30px;
       text-align: center;
     }
-    p {   
+    p {
       font-size: 20px;
     }
   }
@@ -67,8 +67,8 @@ export const ContentWrapper = styled.div`
   padding: 30px;
   border-radius: 10px;
   background-color: aliceblue;
-  @media screen and (max-width: 768px) {
-    ${'' /* display:none; */}
+  @media screen and (max-width: 1000px) {
+    ${"" /* display:none; */}
     width: 100%;
     border-radius: 8px;
   }
@@ -109,11 +109,14 @@ export const ContentBox = styled.div`
     transition: 0.5s ease-in-out;
     cursor: pointer;
   }
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
     background-color: white;
     border-radius: 10px;
-    padding: 16px;
+    padding: 5px;
     display: flex;
     align-items: center;
     margin-bottom: 18px;
@@ -137,7 +140,7 @@ export const ContentBox = styled.div`
       font-size: 16px;
     }
     p {
-      display: none;
+      ${"" /* display: none; */}
       font-size: 16px;
       line-height: 24px;
     }
