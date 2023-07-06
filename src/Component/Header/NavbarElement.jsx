@@ -3,14 +3,18 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 
+export const Box = styled.nav`
+  background-color: #15181d;
+`;
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   height: 100px;
-  padding: 0 150px;
-  background: aliceblue;
+  padding: 0 120px;
+  color: #99a1aa;
   @media screen and (max-width: 1100px) {
     padding: 0 100px;
     width: 100%;
@@ -39,9 +43,9 @@ export const NavLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   line-style: none;
-  color: black;
+  color: #99a1aa;
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     &:hover {
       border-bottom: 3px solid green;
     }

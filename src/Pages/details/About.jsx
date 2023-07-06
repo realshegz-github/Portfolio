@@ -6,6 +6,7 @@ import {
   MobileContent,
   TextBox,
   Wrapper,
+  BoxWrapper,
   ContainerTextOne,
   ContainerTextTwo,
 } from "./AboutElement";
@@ -13,7 +14,7 @@ import { FaTv } from "react-icons/fa";
 import { Fade } from "react-reveal";
 const Details = () => {
   return (
-    <>
+    <BoxWrapper>
       <Wrapper id="about">
         <Box>
           <h1>About Me</h1>
@@ -75,13 +76,13 @@ const Details = () => {
                 <br />
                 <p>
                   <b>Front-End Developer:</b> Building and maintaining of
-                  website
+                  website {""}
                   <a
                     href="https://test-phasecurve-web.azurewebsites.net/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Phasecurve.com
+                    www.phasecurve.com
                   </a>{" "}
                   with React/Chakra UI, collaborating using Git and Trello to
                   achieve specific task given
@@ -91,7 +92,7 @@ const Details = () => {
           </ContainerTextTwo>
         </Container>
       </Wrapper>
-    </>
+    </BoxWrapper>
   );
 };
 

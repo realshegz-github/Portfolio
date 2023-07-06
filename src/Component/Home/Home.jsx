@@ -3,6 +3,7 @@ import {
   Main,
   Wrapper,
   HireBtn,
+  Box,
   Container,
   ImgContainer,
   ImgCircle,
@@ -15,7 +16,7 @@ import react from "../../assets/react.png";
 import { Fade } from "react-reveal";
 const Home = () => {
   return (
-    <>
+    <Box>
       <Main>
         <Wrapper>
           <Fade duration={2500} left>
@@ -46,7 +47,7 @@ const Home = () => {
           </Fade>
         </Wrapper>
       </Main>
-    </>
+    </Box>
   );
 };
 

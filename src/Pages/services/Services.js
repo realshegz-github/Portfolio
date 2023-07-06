@@ -9,10 +9,11 @@ import {
 } from "./ServicesElement";
 import { FaGem, FaCode, FaTv } from "react-icons/fa";
 import { Fade } from "react-reveal";
+import { BoxWrapper } from "../details/AboutElement";
 
 const Services = () => {
   return (
-    <>
+    <BoxWrapper>
       <Wrapper id="services">
         <Container>
           <ContentWrapper>
@@ -70,7 +71,7 @@ const Services = () => {
           </Box>
         </Container>
       </Wrapper>
-    </>
+    </BoxWrapper>
   );
 };
 

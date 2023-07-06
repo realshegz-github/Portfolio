@@ -1,9 +1,14 @@
 import styled from "styled-components";
 // import about from "../../assets/about.jpg";
 
+export const BoxWrapper = styled.div`
+  background-color: #15181d;
+`;
 export const Wrapper = styled.section`
+  max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
-  color: black;
+  color: #99a1aa;
   display: flex;
   padding: 100px 150px 90px;
   flex-direction: column;
@@ -104,5 +109,8 @@ export const TextBox = styled.div`
   span {
     color: green;
     font-family: "Montserrat";
+  }
+  a {
+    color: #778290;
   }
 `;

@@ -5,6 +5,7 @@ import {
   NavMenu,
   NavLink,
   Bars,
+  Box,
   NavLogo,
   Close,
   DivIcon,
@@ -17,7 +18,7 @@ const Navbar = () => {
   }
 
   return (
-    <>
+    <Box>
       <Nav className={active ? "nav-active" : "navbar"}>
         <NavLogo to="/" activeStyle>
           Dev~up
@@ -36,7 +37,8 @@ const Navbar = () => {
             <p>Services</p>
           </NavLink>
           <NavLink
-            href="https://test-phasecurve-web.azurewebsites.net/"
+            href="https://www.beyondthevisual.com"
+            target="_blank"
             activeStyle
           >
             <p>Project</p>
@@ -46,7 +48,7 @@ const Navbar = () => {
           </NavLink>
         </NavMenu>
       </Nav>
-    </>
+    </Box>
   );
 };
 

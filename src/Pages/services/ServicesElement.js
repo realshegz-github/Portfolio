@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   font-family: "Roboto";
   width: 100%;
-  color: black;
+  color: #99a1aa;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   padding: 70px 150px 90px;
   flex-direction: column;
@@ -66,7 +68,7 @@ export const ContentWrapper = styled.div`
   width: 50%;
   padding: 30px;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: #232629;
   @media screen and (max-width: 1000px) {
     ${"" /* display:none; */}
     width: 100%;
@@ -75,7 +77,8 @@ export const ContentWrapper = styled.div`
 `;
 export const ContentBox = styled.div`
   width: auto;
-  background-color: white;
+  color: #99a1aa;
+  background-color: #15181d;
   border-radius: 10px;
   padding: 20px;
   display: flex;

@@ -1,9 +1,13 @@
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+export const Box = styled.div`
+  background-color: #15181d;
+`;
 export const Main = styled.main`
-  background-color: aliceblue;
-  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #99a1aa;
   @media screen and (max-width: 900px) {
     padding: 0 50px;
   }
